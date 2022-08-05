@@ -1,0 +1,19 @@
+@import '../../styles//vars.scss';
+.rating-dots{
+    @media only screen and (min-width:0) {
+        width: 96px;
+        display: flex;
+        justify-content: space-between;
+        span{
+            background-color: $medium-grey;
+            width: 6px;
+            height: 6px;
+            display: inline-block;
+            border-radius: 50%; 
+                &.rated{
+                    background-color: $dark-grey;
+                }
+
+        }
+    }
+}

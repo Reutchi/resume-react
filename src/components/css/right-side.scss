@@ -1,0 +1,58 @@
+@import '../../styles/vars.scss';
+.right-side{
+    @media only screen and (min-width: 0) {
+        padding: 80px 40px 0;
+        background-color: $ligth-grey;
+        header{
+            position: relative;
+        figure{
+            position: absolute;
+            top: -60px;
+            right: 0;
+        }
+            h1{
+                font-size: 36px;
+                font-weight: 50;
+                font-family: 'Averta Std', sans-serif;
+                margin-bottom: 0;
+                span{
+                    
+                }
+            }
+            h2{
+                background-color: $light-black;
+                display: inline-block;
+                color: #fff;
+                margin-top: 8px;
+                font-size: 18px;
+                padding: 8px;
+            }
+            img{
+                width: 160px;
+            }
+        }
+        header + .text-component{
+            margin-top: 24px;
+        }
+        .rating-level{
+            margin-bottom: 4px;
+        }
+        .text-component{
+            position: relative;
+            &::before{
+                content: attr(index);
+                width: 29px;
+                padding: 2px 3px;
+                font-size: 15px;
+                background-image: url(../../assets//counter-icon.svg);
+                background-repeat: no-repeat;
+                left: -50px;
+                display: block;
+                position: absolute;
+                color: #fff;
+            }
+        }
+      
+        
+    }  
+    }

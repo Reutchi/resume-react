@@ -1,0 +1,10 @@
+.left-side{
+    padding: 40px;
+    @media only scree and (min-width:0) {
+        .contact-details{
+            font-size: 14px;
+            font-family: "Averta std", sans-serif;
+
+        }
+    }
+}

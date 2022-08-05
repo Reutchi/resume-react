@@ -1,0 +1,11 @@
+.text-component{
+    @media only screen and (min-width:0) {
+        h3{
+            font-family: 'Averta Std', sans-serif; 
+            font-size: 18px;
+        }
+        p{
+            margin-top: 0;
+        }
+    }
+}
