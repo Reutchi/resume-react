@@ -7,17 +7,20 @@ import { RatingLevel } from './RatingLevel';
 export const RightSide = function ({data}){
   const sections = ['educations', 'current_projects', 'personal_projects']
     return (
-        <section className="right-side">
+        <section cy='right-side'className="right-side">
             <header>
                 <figure>
                     <img src={avatar} alt="myPicProf" />
                 </figure>
                 <h1>{data.name}<br/> 
                 <b>{data.surname}</b></h1>
-                <h2>{data.role}</h2>
+                <h2 cy='role'>{data.role}</h2>
             </header>
              
-             <TextComponent index='01' title='SKILLS'>
+             <TextComponent 
+             
+             index='01' 
+             title='SKILLS'>
                 {
                     data.skills?.map(({name, rate}) => (
                 <RatingLevel 
